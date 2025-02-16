@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://btbyjbaeaclyu"]
+
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_lmxtc"]
+[ext_resource type="Texture2D" uid="uid://dbvqlr55qct03" path="res://assets/adjusted/ethan-dowell-possession-flame_adjusted-modified.png" id="2_c11l1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jofql"]
+radius = 125.228
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_lmxtc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Ethan-dowell-possession-flameAdjusted-modified" type="Sprite2D" parent="."]
+position = Vector2(2, -356)
+texture = ExtResource("2_c11l1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 7)
+shape = SubResource("CircleShape2D_jofql")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, 2)
+zoom = Vector2(0.2, 0.2)
