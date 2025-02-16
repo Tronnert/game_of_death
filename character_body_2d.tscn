@@ -10,12 +10,15 @@ radius = 125.228
 script = ExtResource("1_lmxtc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 4
 
 [node name="Ethan-dowell-possession-flameAdjusted-modified" type="Sprite2D" parent="."]
+z_index = 4
 position = Vector2(2, -356)
 texture = ExtResource("2_c11l1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 4
 position = Vector2(-4, 7)
 shape = SubResource("CircleShape2D_jofql")
 
